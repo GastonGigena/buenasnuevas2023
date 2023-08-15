@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LOS COMIENZOS DE ALAN</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/li-scroller.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <!--[if lt IE 9]>
+<script src="../assets/js/html5shiv.min.js"></script>
+<script src="../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <div class="container">
+    <header id="header">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="header_top">
+            <div class="header_top_left">
+              <ul class="top_nav">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="#">Sobre el proyecto</a></li>
+                <li><a href="contact.html">Contactos</a></li>
+              </ul>
+            </div>
+            <div class="header_top_right">
+              <p id="fecha-hora"></p>
+              <script>
+                // Obtener el elemento donde se mostrará la fecha y la hora
+                const fechaHoraElemento = document.getElementById("fecha-hora");
+
+                // Función para actualizar la fecha y la hora
+                function actualizarFechaHora() {
+                  const fechaHoraActual = new Date();
+                  const opcionesFechaHora = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                  const formatoFechaHora = fechaHoraActual.toLocaleDateString('es-ES', opcionesFechaHora);
+                  fechaHoraElemento.textContent = formatoFechaHora;
+                }
+
+                // Actualizar la fecha y la hora cada segundo
+                setInterval(actualizarFechaHora, 1000);
+
+                // Actualizar la fecha y la hora al cargar la página
+                actualizarFechaHora();
+              </script>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="header_bottom">
+            <div class="logo_area"><a href="../index.html" class="logo"><img src="../images/logoperiodicoblanco.png"
+                  alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="navArea">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav main_nav">
+            <li class="active"><a href="../index.html"><span class="fa fa-home desktop-home"></span><span
+                  class="mobile-show">Home</span></a></li>
+            <li><a href="#">Editorial</a></li>
+            <li><a href="#">Proyecto</a></li>
+            <li><a href="contact.html">Contactos</a></li>
+            <li><a href="404.html">Sobre la escuela</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section id="newsSection">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="latest_newsarea"> <span>Últimas Noticias</span>
+            <ul id="ticker01" class="news_sticker">
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My First News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Second News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Third News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Four News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Five News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Six News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Seven News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Eight News Item</a></li>
+              <li><a href="#"><img src="../images/news_thumbnail2.jpg" alt="">My Nine News Item</a></li>
+            </ul>
+            <div class="social_area">
+              <ul class="social_nav">
+                <li class="mail"><a href="#"></a></li>
+                <li class="facebook"><a href="#"></a></li>
+                <li class="youtube"><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contentSection">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8">
+          <div class="left_content">
+            <div class="single_page">
+              <ol class="breadcrumb">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cuento1.html">Los comienzos de Alan</a></li>
+              </ol>
+
+
+
+
+
+              <h1>LOS COMIENZOS DE ALAN </h1>
+              <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Ulises Rivero</a> <span><i
+                    class="fa fa-calendar"></i>14/08/2023</span> <a href="#"><i class="fa fa-tags"></i>Cuentos</a> </div>
+              <div class="single_page_content"> <img class="img-center" src="../images/cuento1 .jpg" alt="">
+
+                
+
+                <p>En un barrio de Córdoba vivía un chico llamado Alan. Él era hijo único, tenía 14 años, era muy buen estudiante, cursaba el 2° año junto conmigo, es por eso que cuento su historia.
+                  Su familia era muy pobre y su padre trabajaban limpiando vidrios y con eso alcanzaba para comer bien. Comía una vez al día y su madre, quien trabajaba limpiando casas, a veces no llegaba ni a eso y la pasaba tomando mates lavados. 
+                 Un sábado, como cualquier otro, Alan pidió permiso a sus padres para ir a jugar al fútbol en Las Tablitas. Era un partido muy importante, porque iban a ir unos entrenadores del Club Instituto a cazar talentos de este potrero. 
+                 Él pensaba que no lo iban a llevar porque no tenía ropa adecuada, ni botines. Su pobreza no le había permitido ni si quiera conseguir algo prestado, pero su ilusión alimentaba sus fuerzas y sus ganas de salir adelante. Fue por eso que se presentó con un short sucio, una remera que antes de ser suya había tenido como tres dueños y unas zapatillas despegadas que todavía buen aspecto.
+                 Él jugaba muy bien de 9, a pesar de ser muy flaquito, metía muchos goles. Ese día caluroso, estaba muy nervioso, sabía que era una gran oportunidad de mostrarse y de cambiar su vida para siempre, pero sin botines Alan no jugaba. 
+                 Llegó el momento de ingresar y terminó haciéndolo sin botines, era lo que había, no quedaba otra. Empezó el partido, corría de una punta a la otra a pesar de ser delantero, se agitaba mucho pero no dejaba de poner todo. Pensaba en su madre y padre, y en mejor futuro. Eso le dio fuerzas para meter su primer gol, y luego vinieron otros tres. El mejor fue el primero, lo acechaban tres defensores y él metió una patada con zurda y la clavó al ángulo. El arquero no llegó ni a amagarle. 
+                 A la mitad del partido, los adversarios metieron dos goles, Alan se enojó tanto que empezó a agredir a los del equipo contrario. Estaba tan frustrado al ver escapar su sueño que quería agarrarse a las piñas. Pero no lo hizo. Se contuvo. Siguió poniendo su mejor esfuerzo. 
+                 Al terminar el partido los representantes de Instituto, sorprendidos por su forma de jugar, lo “vigiaron” (observaron, miraron). Terminó el partido y lo llamaron, le regalaron unos botines y estos fueron los primeros de su carrera futbolística, aunque hoy todos lo conozcan por haber sido uno de los jugadores que formó parte de la selección de fútbol. 
+                 </p>
+
+              </div>
+              <div class="related_post">
+                <h2>Publicaciones relacionadas</h2>
+                <ul class="spost_nav wow fadeInDown animated">
+                  <li>
+                    <div class="media"> <a class="media-left" href="editorial.html"> <img
+                          src="../images/ed5t6r5a3png-3.png" alt=""> </a>
+                      <div class="media-body"> <a class="catg_title" href="single_page.html">Editorial </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media"> <a class="media-left" href="single_page.html"> <img
+                          src="../images/post_img2.jpg" alt=""> </a>
+                      <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam
+                          eget turpis varius</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media"> <a class="media-left" href="single_page.html"> <img
+                          src="../images/post_img1.jpg" alt=""> </a>
+                      <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam
+                          eget turpis varius</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-slit"> <a class="prev" href="#"> <span class="icon-wrap"><i class="fa fa-angle-left"></i></span>
+            <div>
+              <h3>City Lights</h3>
+              <img src="../images/post_img1.jpg" alt="" />
+            </div>
+          </a> <a class="next" href="#"> <span class="icon-wrap"><i class="fa fa-angle-right"></i></span>
+            <div>
+              <h3>Street Hills</h3>
+              <img src="../images/post_img1.jpg" alt="" />
+            </div>
+          </a> </nav>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <aside class="right_content">
+            <div class="single_sidebar">
+              <h2><span>Publicaciones Populares</span></h2>
+              <ul class="spost_nav">
+                <li>
+                  <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                        src="../images/post_img1.jpg"> </a>
+                    <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget
+                        turpis varius 1</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                        src="../images/post_img2.jpg"> </a>
+                    <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget
+                        turpis varius 2</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                        src="../images/post_img1.jpg"> </a>
+                    <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget
+                        turpis varius 3</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                        src="../images/post_img2.jpg"> </a>
+                    <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget
+                        turpis varius 4</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="single_sidebar">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#category" aria-controls="home" role="tab"
+                    data-toggle="tab">Category</a></li>
+                <li role="presentation"><a href="#video" aria-controls="profile" role="tab" data-toggle="tab">Video</a>
+                </li>
+                <li role="presentation"><a href="#comments" aria-controls="messages" role="tab"
+                    data-toggle="tab">Comments</a></li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="category">
+                  <ul>
+                    <li class="cat-item"><a href="#">Deportes</a></li>
+                    <li class="cat-item"><a href="#">vidas</a></li>
+                    
+                  </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="video">
+                  <div class="vide_area">
+                    <iframe width="100%" height="250"
+                      src="http://www.youtube.com/embed/h5QWbURNEpA?feature=player_detailpage" frameborder="0"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="comments">
+                  <ul class="spost_nav">
+                    <li>
+                      <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                            src="../images/post_img1.jpg"> </a>
+                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam
+                            eget turpis varius 1</a> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                            src="../images/post_img2.jpg"> </a>
+                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam
+                            eget turpis varius 2</a> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                            src="../images/post_img1.jpg"> </a>
+                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam
+                            eget turpis varius 3</a> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt=""
+                            src="../images/post_img2.jpg"> </a>
+                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam
+                            eget turpis varius 4</a> </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="single_sidebar wow fadeInDown">
+              
+            </div>
+            
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+    
+    </footer>
+  </div>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/wow.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/jquery.li-scroller.1.0.js"></script>
+  <script src="../assets/js/jquery.newsTicker.min.js"></script>
+  <script src="../assets/js/jquery.fancybox.pack.js"></script>
+  <script src="../assets/js/custom.js"></script>
+</body>
+
+</html>
