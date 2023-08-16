@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UNA HISTORIA DE AMOR</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/li-scroller.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!--[if lt IE 9]>
+<script src="../assets/js/html5shiv.min.js"></script>
+<script src="../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+    <div class="container">
+        <header id="header">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="header_top">
+                        <div class="header_top_left">
+                            <ul class="top_nav">
+                                <li><a href="../index.html">INICIO</a></li>
+                                <li><a href="#">Sobre el proyecto</a></li>
+                                <li><a href="contact.html">Contactos</a></li>
+                            </ul>
+                        </div>
+                        <div class="header_top_right">
+                            <p id="fecha-hora"></p>
+                            <script>
+                                // Obtener el elemento donde se mostrará la fecha y la hora
+                                const fechaHoraElemento = document.getElementById("fecha-hora");
+
+                                // Función para actualizar la fecha y la hora
+                                function actualizarFechaHora() {
+                                    const fechaHoraActual = new Date();
+                                    const opcionesFechaHora = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                                    const formatoFechaHora = fechaHoraActual.toLocaleDateString('es-ES', opcionesFechaHora);
+                                    fechaHoraElemento.textContent = formatoFechaHora;
+                                }
+
+                                // Actualizar la fecha y la hora cada segundo
+                                setInterval(actualizarFechaHora, 1000);
+
+                                // Actualizar la fecha y la hora al cargar la página
+                                actualizarFechaHora();
+                            </script>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="header_bottom">
+                                <div class="logo_area"><a href="../index.html" class="logo"><img
+                                            src="../images/logoperiodicoblanco.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+        </header>
+        <section id="navArea">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav main_nav">
+                        <li class="active"><a href="../index.html"><span class="fa fa-home desktop-home"></span><span
+                                    class="mobile-show">Home</span></a></li>
+                        <li><a href="#">Editorial</a></li>
+                        <li><a href="#">Proyecto</a></li>
+                        <li><a href="contact.html">Contactos</a></li>
+                        <li><a href="404.html">Sobre la escuela</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section id="newsSection">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="latest_newsarea"> <span>Últimas Noticias</span>
+                        <ul id="ticker01" class="news_sticker">
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My First News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Second News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Third News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Four News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Five News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Six News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Seven News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Eight News Item</a></li>
+                            <li><a href="#"><img src="../images/news_thumbnail2.jpg" alt="">My Nine News Item</a></li>
+                        </ul>
+                        <div class="social_area">
+                            <ul class="social_nav">
+                                <li class="mail"><a href="#"></a></li>
+                                <li class="facebook"><a href="#"></a></li>
+                                <li class="youtube"><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contentSection">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="left_content">
+                        <div class="single_page">
+                            <ol class="breadcrumb">
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="cuento8.html">Una historia de amor</a></li>
+                            </ol>
+
+
+
+
+
+                            <h1>UNA HISTORIA DE AMOR</h1>
+                            <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Ziara Moyano</a>
+                                <span><i class="fa fa-calendar"></i>Agosto 2023</span> <a href="#"><i
+                                        class="fa fa-tags"></i>Cuentos</a>
+                            </div>
+                            <div class="single_page_content"> <img class="img-center" src="../images/cuento8.jpg"
+                                    alt="">
+
+
+
+                                <p>
+                                    Había una vez una niña llamada Briana quien estaba en sus vacaciones de verano. Ella
+                                    les insistía hacía tiempo a sus padres para que la dejaran ir al campamento de su
+                                    vida. Allí le enseñarían a cantar, actuar, bailar, dibujar y a tocar instrumentos.
+                                    A ella le encantaba aprender cosas nuevas, por eso estaba tan entusiasmada con esta
+                                    salida que duraría una semana. Pero sus padres no querían que falte a la escuela y
+                                    Briana ya no sabía qué hacer para poder ese permiso.
+                                    Un día de diciembre la mamá la llamó y le dijo que tenían una decisión respecto a su
+                                    pedido. Ella fue muy entusiasmada y le dijeron que iba a ir de campamento, pero no
+                                    exactamente al que quería ir. Consiguieron otra opción similar pero más barata y
+                                    cercana, además no tendría que faltar tantos días a la escuela.
+                                    Con cara de berrinche que le ocupaba media cabeza la joven dio media vuelta y pegó
+                                    un portazo al entrar a su cuarto.
+                                    Al día siguiente su papá la despertó a las 7.50 de la mañana, tenía una valija ya
+                                    armada para ir a este campamento aburrido. Le habían elegido no el destino sino
+                                    hasta la ropa que se iba a poner ese día. Al despertar ella preguntó: ¿Ya hoy tengo
+                                    ir al campamento aburrido al que ustedes eligieron?
+                                    Su padre afirmó que sí. Entonces ella le pidió que le dé un rato para cambiarse.
+                                    Finalmente fue. Le tocó viajar en el asiento del colectivo junto a un chico rubio
+                                    con ojos grises y empezó a sentirse más a gusto con la elección de sus padres.
+                                    El chico era muy, muy lindo, pero ella para disimular ni lo miraba. El solo hecho de
+                                    pensar en que podía darse cuenta que le gustaba, la hacía poner roja. A la mitad del
+                                    viaje, él le preguntó su nombre y se presentó diciendo que se llamaba Ramiro.
+                                    Cuando llegaron al campamento salieron del micro y les asignaron las cabañas en las
+                                    que se alojarían todas las noches que estuvieran allí. Los compañeros que le tocaron
+                                    fueron: Micaela –una chica totalmente desconocida para ella-, Ramiro –su vecino de
+                                    viaje- Paco y Carolina.
+                                    La primera noche Briana tuvo insomnio y decidió salir a caminar por el bosque. Todo
+                                    estaba muy oscuro pero ella no tenía miedo. Dio vueltas hasta que sintió un ruido
+                                    que la asustó y pegó un grito que despertó a Ramiro. Él se acercó a ayudarla y ella
+                                    lo abrazó aterrada. Nunca supo qué causó esos ruidos, pero lo que sí descubrió desde
+                                    esa noche fue el amor de su vida.
+
+
+                                </p>
+
+                            </div>
+                            <div class="related_post">
+                                <h2>Publicaciones relacionadas</h2>
+                                <ul class="spost_nav wow fadeInDown animated">
+                                    <li>
+                                        <div class="media"> <a class="media-left" href="editorial.html"> <img
+                                                    src="../images/ed5t6r5a3png-3.png" alt=""> </a>
+                                            <div class="media-body"> <a class="catg_title"
+                                                    href="single_page.html">Editorial </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media"> <a class="media-left" href="cuento2.html"> <img
+                                                    src="../images/cuento2 .jpg" alt=""> </a>
+                                            <div class="media-body"> <a class="catg_title" href="cuento2.html"> la
+                                                    triste historia de
+                                                    joaquín</a> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media"> <a class="media-left" href="cuento1.html"> <img
+                                                    src="../images/cuento1 .jpg" alt=""> </a>
+                                            <div class="media-body"> <a class="catg_title" href="cuento1.html"> Los
+                                                    comienzos de Alan</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav-slit"> <a class="prev" href="#"> <span class="icon-wrap"><i
+                                class="fa fa-angle-left"></i></span>
+                        <div>
+                            <h3>City Lights</h3>
+                            <img src="../images/post_img1.jpg" alt="" />
+                        </div>
+                    </a> <a class="next" href="#"> <span class="icon-wrap"><i class="fa fa-angle-right"></i></span>
+                        <div>
+                            <h3>Street Hills</h3>
+                            <img src="../images/post_img1.jpg" alt="" />
+                        </div>
+                    </a> </nav>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <aside class="right_content">
+                        <div class="single_sidebar">
+                            <h2><span>Publicaciones Populares</span></h2>
+                            <ul class="spost_nav">
+                                <li>
+                                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left">
+                                            <img alt="" src="../images/post_img1.jpg"> </a>
+                                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam
+                                                malesuada diam eget
+                                                turpis varius 1</a> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left">
+                                            <img alt="" src="../images/post_img2.jpg"> </a>
+                                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam
+                                                malesuada diam eget
+                                                turpis varius 2</a> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left">
+                                            <img alt="" src="../images/post_img1.jpg"> </a>
+                                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam
+                                                malesuada diam eget
+                                                turpis varius 3</a> </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left">
+                                            <img alt="" src="../images/post_img2.jpg"> </a>
+                                        <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam
+                                                malesuada diam eget
+                                                turpis varius 4</a> </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="single_sidebar wow fadeInDown">
+
+                        </div>
+
+                </div>
+                </aside>
+            </div>
+    </div>
+    </section>
+    <footer id="footer">
+
+    </footer>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/jquery.li-scroller.1.0.js"></script>
+    <script src="../assets/js/jquery.newsTicker.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.pack.js"></script>
+    <script src="../assets/js/custom.js"></script>
+</body>
+
+</html>

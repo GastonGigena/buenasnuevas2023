@@ -39,33 +39,33 @@
               </ul>
             </div>
             <div class="header_top_right">
-                <p id="fecha-hora"></p>
-                <script>
-                  // Obtener el elemento donde se mostrará la fecha y la hora
-                  const fechaHoraElemento = document.getElementById("fecha-hora");
-  
-                  // Función para actualizar la fecha y la hora
-                  function actualizarFechaHora() {
-                    const fechaHoraActual = new Date();
-                    const opcionesFechaHora = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-                    const formatoFechaHora = fechaHoraActual.toLocaleDateString('es-ES', opcionesFechaHora);
-                    fechaHoraElemento.textContent = formatoFechaHora;
-                  }
-  
-                  // Actualizar la fecha y la hora cada segundo
-                  setInterval(actualizarFechaHora, 1000);
-  
-                  // Actualizar la fecha y la hora al cargar la página
-                  actualizarFechaHora();
-                </script>
+              <p id="fecha-hora"></p>
+              <script>
+                // Obtener el elemento donde se mostrará la fecha y la hora
+                const fechaHoraElemento = document.getElementById("fecha-hora");
+
+                // Función para actualizar la fecha y la hora
+                function actualizarFechaHora() {
+                  const fechaHoraActual = new Date();
+                  const opcionesFechaHora = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                  const formatoFechaHora = fechaHoraActual.toLocaleDateString('es-ES', opcionesFechaHora);
+                  fechaHoraElemento.textContent = formatoFechaHora;
+                }
+
+                // Actualizar la fecha y la hora cada segundo
+                setInterval(actualizarFechaHora, 1000);
+
+                // Actualizar la fecha y la hora al cargar la página
+                actualizarFechaHora();
+              </script>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="header_bottom">
+                <div class="logo_area"><a href="../index.html" class="logo"><img src="../images/logoperiodicoblanco.png"
+                      alt=""></a></div>
               </div>
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="header_bottom">
-            <div class="logo_area"><a href="../index.html" class="logo"><img src="../images/logoperiodicoblanco.png"
-                  alt=""></a></div>
+            </div>
           </div>
-        </div>
-      </div>
     </header>
     <section id="navArea">
       <nav class="navbar navbar-inverse" role="navigation">
@@ -128,17 +128,29 @@
 
               <h1>UN DOMINGO AGITADO</h1>
               <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Dylan Domínguez</a> <span><i
-                    class="fa fa-calendar"></i>15/08/2023</span> <a href="#"><i class="fa fa-tags"></i>Cuentos</a> </div>
+                    class="fa fa-calendar"></i>Agosto 2023</span> <a href="#"><i class="fa fa-tags"></i>Cuentos</a>
+              </div>
               <div class="single_page_content"> <img class="img-center" src="../images/cuento3.jpg" alt="">
 
-                
 
-                <p>El día domingo fui con mis amigos al Parque. Hacía mucho calor y había mucha, nosotros salimos a caminar, fuimos a los juegos y tomamos algo. La estábamos pasando muy bien.
-                    Cuando fue el momento de regresar, notamos que una banda de chicos nos seguía. Primero creímos que iban por el mismo camino, pero después nos dimos cuenta de que algo más pasaba. Querían robarnos y encima yo había traído conmigo la plata para comprarme ropa. Tenía como 30 mil pesos. 
-                    Después de darnos cuenta de que nos perseguían nos escondimos en el Patio Olmos. Entramos asustados, pero después nos relajamos. Fuimos a Mac Donald, comimos una rica hamburguesa con papas chédar, tomamos una coca y se nos pasó el susto.
-                    Salimos para tomar un taxi, y ahí estaban los chicos esperándonos. Nos corrieron tres cuadras, la gente nos miraba pero no hacía nada, se notaba que querían asaltarnos. Corrimos hasta que nos cansamos. Nos detuvo el cansancio, pero nos íbamos a dejar robar. Nos pusimos a pelear. Se metieron unas personas a querer separarlos y llamaron a la policía. Cuando vimos que llegar el patrullero, huimos y frenamos un taxi. Ya llegando a nuestro barrio Ciudad de Mis Sueños, nos frenó la policía. El taxista trabó las puertas, pero yo  escapé por la ventana aunque mis amigos Ulises –alias el Piojo-, Mikeas – alias el Pierda-, Julián –alias Frentudo- y Alan –alias Gómez- terminaron detenidos. 
-                     
-                  </p>
+
+                <p>El día domingo fui con mis amigos al Parque. Hacía mucho calor y había mucha, nosotros salimos a
+                  caminar, fuimos a los juegos y tomamos algo. La estábamos pasando muy bien.
+                  Cuando fue el momento de regresar, notamos que una banda de chicos nos seguía. Primero creímos que
+                  iban por el mismo camino, pero después nos dimos cuenta de que algo más pasaba. Querían robarnos y
+                  encima yo había traído conmigo la plata para comprarme ropa. Tenía como 30 mil pesos.
+                  Después de darnos cuenta de que nos perseguían nos escondimos en el Patio Olmos. Entramos asustados,
+                  pero después nos relajamos. Fuimos a Mac Donald, comimos una rica hamburguesa con papas chédar,
+                  tomamos una coca y se nos pasó el susto.
+                  Salimos para tomar un taxi, y ahí estaban los chicos esperándonos. Nos corrieron tres cuadras, la
+                  gente nos miraba pero no hacía nada, se notaba que querían asaltarnos. Corrimos hasta que nos
+                  cansamos. Nos detuvo el cansancio, pero nos íbamos a dejar robar. Nos pusimos a pelear. Se metieron
+                  unas personas a querer separarlos y llamaron a la policía. Cuando vimos que llegar el patrullero,
+                  huimos y frenamos un taxi. Ya llegando a nuestro barrio Ciudad de Mis Sueños, nos frenó la policía. El
+                  taxista trabó las puertas, pero yo escapé por la ventana aunque mis amigos Ulises –alias el Piojo-,
+                  Mikeas – alias el Pierda-, Julián –alias Frentudo- y Alan –alias Gómez- terminaron detenidos.
+
+                </p>
 
               </div>
               <div class="related_post">
@@ -151,15 +163,17 @@
                     </div>
                   </li>
                   <li>
-                    <div class="media"> <a class="media-left" href="cuento2.html"> <img
-                          src="../images/cuento2 .jpg" alt=""> </a>
-                      <div class="media-body"> <a class="catg_title" href="cuento2.html"> la triste historia de joaquín</a> </div>
+                    <div class="media"> <a class="media-left" href="cuento2.html"> <img src="../images/cuento2 .jpg"
+                          alt=""> </a>
+                      <div class="media-body"> <a class="catg_title" href="cuento2.html"> la triste historia de
+                          joaquín</a> </div>
                     </div>
                   </li>
                   <li>
-                    <div class="media"> <a class="media-left" href="cuento1.html"> <img
-                          src="../images/cuento1 .jpg" alt=""> </a>
-                      <div class="media-body"> <a class="catg_title" href="cuento1.html"> Los comienzos de Alan</a> </div>
+                    <div class="media"> <a class="media-left" href="cuento1.html"> <img src="../images/cuento1 .jpg"
+                          alt=""> </a>
+                      <div class="media-body"> <a class="catg_title" href="cuento1.html"> Los comienzos de Alan</a>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -215,17 +229,17 @@
             </div>
 
             <div class="single_sidebar wow fadeInDown">
-              
+
             </div>
-            
-            </div>
-          </aside>
+
         </div>
+        </aside>
       </div>
-    </section>
-    <footer id="footer">
-    
-    </footer>
+  </div>
+  </section>
+  <footer id="footer">
+
+  </footer>
   </div>
   <script src="../assets/js/jquery.min.js"></script>
   <script src="../assets/js/wow.min.js"></script>
