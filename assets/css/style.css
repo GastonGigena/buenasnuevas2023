@@ -680,6 +680,7 @@ img:hover {
     float: left;
     display: inline;
     width: 100%
+    
 }
 
 .latest_post>h2 {
@@ -699,17 +700,21 @@ img:hover {
 
 .latest_post>h2 span {
     padding: 4px 10px
+    
 }
 
 .latest_postnav {
     height: auto !important;
     margin-top: 20px
+    
+    
 }
 
 .latest_postnav li {
     margin-bottom: 10px;
     float: left;
     width: 100%
+    
 }
 
 .latest_post_container {
@@ -718,6 +723,7 @@ img:hover {
     height: 430px;
     position: relative;
     width: 100%
+    
 }
 
 .latest_post_container:hover #prev-button,
